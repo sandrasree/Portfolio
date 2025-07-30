@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/jpg" href="./asset/favicon.jpg">
+  <title >portfolio</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <img src="./asset/profile.jpg" class="logo" alt="Profile Logo">
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+  </header>
+
+
+  <section id="about">
+
+    <div class="about-me">
+      <div>
+        <h2>About Me</h2><img src="./asset/abimg.jpg" alt="About Me" class="about-img">
+      </div>
+      <p>
+        Hi, My name is Sandra. I am a passionate tech enthusiast 🌿<br>
+        I hold a Bachelor's degree in Computer Applications from The Oxford College of Science under Bangalore University and currently pursuing my Master's in Computer Applications
+        with a specialization in Cyber Security from Jain - Deemed to be University (Online).
+        I've always been fascinated by how technology can solve real-world problems.
+        I've worked on various projects ranging from web development and mobile apps to generative AI and I enjoy
+        learning new technologies like Python, MERN stack, Cyber Security, Robotics and AI tools.
+        I've completed an internship in MERN stack development from Innomatic Research Labs, also a Cyber Job Simulation
+        internship from Deloitte and have experience working as an
+        Application Specialist in Optimize RCM(Formerly known as Tharworx) where I was helping the clients in
+        application data management using tools like Salesforce.
+        Outside of tech, I love sketching, exploring nature and sharing knowledge through tutorials.
+        I'm currently exploring Cyber Security, Robotics and AI to create innovative solutions that can make a
+        valuable difference and that's all about me 😊
+      </p>
+    </div>
+  </section>
+
+
+  <section id="education">
+    <div class="education">
+      <div>
+        <h2>Education</h2><img src="./asset/education.jpg" alt="qualifications" class="education-img">
+      </div>
+      <p><b>Master of Computer Applications (MCA)</b>
+        <br>Jain - Deemed to be University (Online)
+        <br>Pursuing – Expected completion: 2026
+
+        <br><br><b>Bachelor of Computer Applications (BCA)</b>
+        <br>The Oxford College of Science, Bangalore University
+        <br>CGPA: 8.56 | Year of Completion: 2023
+
+        <br><br><b>Secondary Education</b>
+        <br>Indiranagar Composite PU College, Department of Pre-University Education
+        <br>Percentage: 84% |Year of Completion: 2020
+      </p>
+  </section>
+  <section id="skills">
+    <div class="skills">
+      <h2 style="font-size: 100px;">Skills</h2>
+      <ul>
+        <li><strong>Programming Languages:</strong> Python, JavaScript, Java, C++</li>
+        <li><strong>Web Development:</strong> HTML, CSS, Bootstrap, MERN Stack</li>
+        <li><strong>Database Management:</strong> MySQL, SQL, MongoDB</li>
+        <li><strong>Tools & Platforms:</strong> Figma, Salesforce, GitHub, Thunderclient, VS Code, Microsoft Office</li>
+        <li><strong>Robotics & Prototyping:</strong> Arduino, Microbit, Quarky, Scratch, Sensors</li>
+        <li><strong>AI / ML:</strong> Generative AI, Prompt Engineering, ML Basics</li>
+        <li><strong>Cybersecurity:</strong> CIA Triad, OWASP Top 10, Network Security</li>
+        <li><strong>Other Skills:</strong> REST APIs, CRUD, Responsive Design, UI/UX</li>
+      </ul>
+  </section>
+  <section id="projects">
+    <h2 style="color: rgb(121, 29, 29);">Projects</h2>
+
+    <div class="project-gallery">
+      <div class="project-card" onclick="openModal('modal1')">
+        <video src="./asset/Artistic.mp4" muted autoplay loop></video>
+        <h3 style="color: black;">Artistic - E-commerce Mobile Application</h3>
+      </div>
+
+      <div class="project-card" onclick="openModal('modal2')">
+        <video src="./asset/juicy.mp4" muted autoplay loop></video>
+        <h3 style="color: black;">Figma Design - Juicy</h3>
+      </div>
+
+      <div class="project-card" onclick="openModal('modal3')">
+        <video src="./asset/chatbot.mp4" muted autoplay loop></video>
+        <h3 style="color: black;">MYJuu AI - Chatbot</h3>
+      </div>
+
+      <div class="project-card" onclick="openModal('modal4')">
+        <video src="./asset/Blog.mp4" muted autoplay loop></video>
+        <h3 style="color: black;">Blog Website</h3>
+      </div>
+
+      <div class="project-card" onclick="openModal('modal5')">
+        <img src="./asset/Natureleaf.jpg" alt="Project Image Thumbnail">
+        <h3 style="color: black;">NatureLeaf - Static Web Application</h3>
+      </div>
+
+    </div>
+
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <button class="close" onclick="closeModalAndTab('modal1')" aria-label="Close modal">&times;</button>
+        <video src="./asset/Artistic.mp4" controls></video>
+        <h3>Artwork E-commerce App</h3>
+        <p>An Android app for buying and selling artwork. Developed using XML, Java, Firebase in the Android Studio
+          Platform</p>
+      </div>
+    </div>
+
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModalAndTab('modal2')">&times;</span>
+        <video src="./asset/Juicy.mp4" controls></video>
+        <h3>Figma Design - Juicy</h3>
+        <p>A Figma design project showcasing a juicy fruit e-commerce app.</p>
+      </div>
+    </div>
+
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModalAndTab('modal3')">&times;</span>
+        <video src="./asset/chatbot.mp4" controls></video>
+        <h3>MYJuu - Chatbot</h3>
+        <p>A chatbot using GUVI's RAG model for intelligent conversations.</p>
+      </div>
+    </div>
+
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModalAndTab('modal4')">&times;</span>
+        <video src="./asset/Blog.mp4" controls></video>
+        <h3>Blog Website</h3>
+        <p>A blog website built with HTML, CSS, JS, React, Express, NodeJS, RESTAPI and MongoDB.</p>
+      </div>
+    </div>
+
+    <div id="modal5" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModalAndTab('modal5')">&times;</span>
+        <img src="./asset/Natureleaf.jpg" alt="Web Application">
+        <h3>NatureLeaf - Static Web Application</h3>
+        <p>A static web application for plant purchasing using image classification. Developed with HTML, CSS and
+          Bootstrap</p>
+        View the website <a href="https://sandrasree.github.io/static-web-design/">NatureLeaf Website</a>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 40px; color: #8167b6;">
+      <p style="font-size: 18px;">
+        Want to explore more projects?
+        <a href="https://github.com/sandrasree?tab=repositories" target="_blank"
+          style="color: #66a7e8; text-decoration: none;">
+          View All on GitHub
+        </a>
+      </p>
+    </div>
+
+  </section>
+  <div id="certifications">
+    <h2 style="text-align: center;margin-top: 5px; color: #8a1c1c;">Certifications</h2>
+    <div class="container">
+      <!-- Slides -->
+      <div class="mySlides"><img src="./asset/cyber.jpg" alt="Cyber Job Simulation"></div>
+      <div class="mySlides"><img src="./asset/Linux.jpg" alt="Linux Command Line"></div>
+      <div class="mySlides"><img src="./asset/AIleader.jpg" alt="Becoming an AI-First Product Leader"></div>
+      <div class="mySlides"><img src="./asset/backend.jpg" alt="Backend Development"></div>
+      <div class="mySlides"><img src="./asset/frontend.jpg" alt="Frontend Development"></div>
+      <div class="mySlides"><img src="./asset/guvi.jpg" alt="Generative AI"></div>
+      <div class="mySlides"><img src="./asset/AIstudio.jpg" alt="Generative AI Studio"></div>
+      <div class="mySlides"><img src="./asset/JavaFSD.jpg" alt="Java Full Stack Development"></div>
+      <div class="mySlides"><img src="./asset/jsinter.jpg" alt="JavaScript Intermediate"></div>
+      <div class="mySlides"><img src="./asset/Ethicalhacking.jpg" alt="Ethical Hacking for Beginners"></div>
+      <div class="mySlides"><img src="./asset/cybersecurity.jpg" alt="Introduction to Cybersecurity"></div>
+      <div class="mySlides"><img src="./asset/DS.jpg" alt="DataScience with Python"></div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <div class="row">
+        <img class="demo" src="./asset/cyber.jpg" onclick="currentSlide(1)" alt="Cyber Job Simulation">
+        <img class="demo" src="./asset/Linux.jpg" onclick="currentSlide(2)" alt="Linux Command Line">
+        <img class="demo" src="./asset/AIleader.jpg" onclick="currentSlide(3)"
+          alt="Becoming an AI-First Product Leader">
+        <img class="demo" src="./asset/backend.jpg" onclick="currentSlide(4)" alt="Backend Development">
+        <img class="demo" src="./asset/frontend.jpg" onclick="currentSlide(5)" alt="Frontend Development">
+        <img class="demo" src="./asset/guvi.jpg" onclick="currentSlide(6)" alt="Generative AI">
+        <img class="demo" src="./asset/AIstudio.jpg" onclick="currentSlide(7)" alt="Generative AI Studio">
+        <img class="demo" src="./asset/JavaFSD.jpg" onclick="currentSlide(8)" alt="Java Full Stack Development">
+        <img class="demo" src="./asset/jsinter.jpg" onclick="currentSlide(9)" alt="JavaScript Intermediate">
+        <img class="demo" src="./asset/Ethicalhacking.jpg" onclick="currentSlide(10)"
+          alt="Ethical Hacking for Beginners">
+        <img class="demo" src="./asset/cybersecurity.jpg" onclick="currentSlide(11)"
+          alt="Introduction to Cybersecurity">
+        <img class="demo" src="./asset/DS.jpg" onclick="currentSlide(12)" alt="DataScience with Python">
+      </div>
+    </div>
+  </div>
+
+  <footer class="portfolio-footer">
+    <div class="footer-section left">
+      <h4>Sandra S</h4>
+      <p style="text-align: left;">Thanks for visiting my portfolio. Let's connect!</p>
+      <a href="https://github.com/sandrasree" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/sandras01" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:sandrasree14608@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+    </div>
+
+    <div class="footer-section center">
+
+      </a>
+    </div>
+
+    <div class="footer-section right">
+      <p>📍 From: Bangalore, Karnataka, India</p>
+      <p>✅ Open to Work</p>
+      <p>🌍 Willing to Relocate</p>
+      <p>💼 Full-time Roles & Freelance</p>
+    </div>
+  </footer>
+
+  <div class="footer-bottom">
+    <p> Designed with ❤️ by Sandra S | All Rights Reserved © 2025 </p>
+  </div>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
